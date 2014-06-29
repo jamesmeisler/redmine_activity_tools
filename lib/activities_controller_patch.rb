@@ -52,7 +52,10 @@ module ActivitiesControlerPatch
 		          end
 		          render_feed(events, :title => "#{@project || Setting.app_title}: #{title}")
 		        }
-		        format.api 
+		        format.api {
+		        	@events_by_day = events.group_by {|event| User.current.time_to_date(event.event_datetime)}
+		        	#puts @events_by_day.to_json
+		        }
 		      end
 		    end
 

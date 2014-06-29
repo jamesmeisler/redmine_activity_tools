@@ -4,7 +4,7 @@ Redmine::Plugin.register :redmine_activity_tools do
   name 'Redmine Activity Tools plugin'
   author 'James Meisler'
   description 'A plugin for extending the Redmine API to report activity.'
-  version '0.0.1'
+  version '0.0.2'
   url 'https://github.com/jamesmeisler/redmine_activity_tools'
   author_url 'http://hobbitpi.com'
 end
