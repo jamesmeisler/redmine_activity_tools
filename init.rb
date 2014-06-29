@@ -1,3 +1,6 @@
+require 'activities_controller_patch'
+#require 'dispatcher'
+
 Redmine::Plugin.register :redmine_activity_tools do
   name 'Redmine Activity Tools plugin'
   author 'James Meisler'

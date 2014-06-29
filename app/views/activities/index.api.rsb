@@ -1,0 +1,12 @@
+api.array :events do
+	@activity.events(@date_from, @date_to).each do |event|
+		api.event do
+			api.id event.id
+			api.journalized_id event.journalized_id
+			api.user_id event.user_id
+			api.notes event.notes
+			api.created_on event.created_on
+			api.private_notes event.private_notes
+		end
+	end
+end
